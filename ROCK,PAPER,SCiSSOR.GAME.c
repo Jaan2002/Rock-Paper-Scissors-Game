@@ -3,6 +3,7 @@
 #include<time.h>
 #include<windows.h>
  int rockpaperscissor(char,char);
+
 int main(){
 	system("Color C7");
 	int i;
@@ -43,12 +44,12 @@ int main(){
 }
 int rockpaperscissor(char you, char comp)
 { // return 1 for win! ,return -1 for Lose! ,return 0 for Draw.
-  // Draw condition***
+  // Draw condition**
   if(you==comp){
   	return 0;
   }
   // NOt Draw condition***              rs  pr  sp
-  if(you=='r'&& comp=='s' ){             //sr  rp  ps
+  if(you=='r'&& comp=='s' ){            //sr  rp  ps
   	return 1;	
   }
   else if(you=='s'&& comp=='r'){
